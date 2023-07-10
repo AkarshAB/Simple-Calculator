@@ -1,0 +1,18 @@
+
+
+button:active{
+  transform: scale(0.97);
+}
+
+.inputDiv{
+  background-color: white;
+}
+
+.main {
+  box-shadow: 2px 2px 2px;
+}
+
+.calcInput::placeholder{
+  color: black;
+  /* opacity: 1; */
+}
