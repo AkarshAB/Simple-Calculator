@@ -1,10 +1,8 @@
-
-
-button:active{
+button:active {
   transform: scale(0.97);
 }
 
-.inputDiv{
+.inputDiv {
   background-color: white;
 }
 
@@ -12,7 +10,11 @@ button:active{
   box-shadow: 2px 2px 2px;
 }
 
-.calcInput::placeholder{
+.calcInput::placeholder {
   color: black;
   /* opacity: 1; */
+}
+
+input[type="text"]:disabled {
+  background-color: white;
 }

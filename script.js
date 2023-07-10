@@ -1,15 +1,15 @@
 // 1) To display numbers and operators in console.
-function displayNumber(num){
-   result.value += num;
+function displayNumber(num) {
+  result.value += num;
 }
 
 // 2) To clear
-function clearBox(){
+function clearBox() {
   result.value = '';
 }
 
 // 3) To evaluate
-function evaluateBox(){
+function evaluateBox() {
 
   //Method 1
   // exp = result.value;
@@ -21,8 +21,8 @@ function evaluateBox(){
 }
 
 // 4) Backspace -  remove last item from box
-function backspace(){
+function backspace() {
   currentItem = result.value;
-  result.value = currentItem.slice(0,-1);
+  result.value = currentItem.slice(0, -1);
 
 }

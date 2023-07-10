@@ -10,8 +10,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body style="background-color: darkcyan;">
@@ -20,44 +22,53 @@
     <div class="col-4 mt-5">
       <h1 class="text-light">Calculator</h1>
       <div class="inputDiv p-2 rounded-top-2 mt-4" style="box-shadow: 0px 0px 8px;">
-        <input type="text" id="result" class="form-control border-0 text-end calcInput" style="padding: 10px; padding-right: 34px;" placeholder="0">
+        <input type="text" disabled id="result" class="form-control border-0 text-end calcInput"
+          style="padding: 10px; padding-right: 34px;" placeholder="0">
       </div>
       <div class="d-flex" style="box-shadow: 0px 5px 8px;">
         <button id="seven" onclick="displayNumber(7)" class="number flex-fill bg-light border p-2 col-1 py-3">7</button>
         <button id="eight" onclick="displayNumber(8)" class="number flex-fill bg-light p-2 border col-1">8</button>
         <button id="nine" onclick="displayNumber(9)" class="number flex-fill bg-light p-2 border col-1">9</button>
-        <button id="multiply" onclick="displayNumber('*')" class="multiply text-danger flex-fill bg-tertiary p-2 border col-1 ">&#215;</button>
+        <button id="multiply" onclick="displayNumber('*')"
+          class="multiply text-danger flex-fill bg-tertiary p-2 border col-1 ">&#215;</button>
       </div>
       <div class="d-flex" style="box-shadow: 0px 0px 8px;">
         <button id="four" onclick="displayNumber(4)" class="number flex-fill bg-light border p-2 col-1 py-3">4</button>
         <button id="five" onclick="displayNumber(5)" class="number flex-fill bg-light p-2 border col-1">5</button>
         <button id="six" onclick="displayNumber(6)" class="number flex-fill bg-light p-2 border col-1">6</button>
-        <button id="minus" onclick="displayNumber('-')" class="minus text-danger flex-fill bg-tertiary p-2 border col-1">&#8722;</button>
+        <button id="minus" onclick="displayNumber('-')"
+          class="minus text-danger flex-fill bg-tertiary p-2 border col-1">&#8722;</button>
       </div>
       <div class="d-flex" style="box-shadow: 0px 0px 8px;">
         <button id="one" onclick="displayNumber(1)" class="number flex-fill bg-light border p-2 col-1 py-3">1</button>
         <button id="two" onclick="displayNumber(2)" class="number flex-fill bg-light p-2 border col-1">2</button>
         <button id="three" onclick="displayNumber(3)" class="number flex-fill bg-light p-2 border col-1">3</button>
-        <button id="add" onclick="displayNumber('+')" class="add text-danger flex-fill bg-tertiary p-2 border col-1">&#43;</button>
+        <button id="add" onclick="displayNumber('+')"
+          class="add text-danger flex-fill bg-tertiary p-2 border col-1">&#43;</button>
       </div>
       <div class="d-flex" style="box-shadow: 0px 0px 8px;">
-        <button id="AllClear" onclick="clearBox()" class="flex-fill text-danger bg-tertiary border p-2 col-3 py-3">AC</button>
+        <button id="AllClear" onclick="clearBox()"
+          class="flex-fill text-danger bg-tertiary border p-2 col-3 py-3">AC</button>
         <button id="0" onclick="displayNumber(0)" class="number flex-fill bg-light p-2 border   col-3">0</button>
-        <button id="divison" onclick="displayNumber('/')" class="divide text-danger flex-fill bg-tertiary  p-2 border col-3">&#247;</button>
-        <button id="equalto" onclick="evaluateBox()" class="flex-fill text-danger bg-tertiary p-2 border col-3" style="background-color: lightgrey;">&#61;</button>
+        <button id="divison" onclick="displayNumber('/')"
+          class="divide text-danger flex-fill bg-tertiary  p-2 border col-3">&#247;</button>
+        <button id="equalto" onclick="evaluateBox()" class="flex-fill text-danger bg-tertiary p-2 border col-3"
+          style="background-color: lightgrey;">&#61;</button>
       </div>
       <div class="d-flex rounded-bottom-2" style="box-shadow: 0px 0px 8px;">
-        <button id="backspace" style="border-bottom-left-radius: 7px; background-color: lightsalmon;" onclick="backspace()" class="backspace text-light flex-fill border p-2 col-3 py-3" ><i class="fa-solid fa-delete-left" style="color: white;"></i></button>
+        <button id="backspace" style="border-bottom-left-radius: 7px; background-color: lightsalmon;"
+          onclick="backspace()" class="backspace text-light flex-fill border p-2 col-3 py-3"><i
+            class="fa-solid fa-delete-left" style="color: white;"></i></button>
         <div class="bg-light col-9" style="border-bottom-right-radius: 7px;">&nbsp;</div>
       </div>
     </div>
-  
+
 
   </div>
 
 </body>
 <script src="./script.js">
- 
+
 </script>
 
 </html>
