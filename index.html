@@ -47,8 +47,10 @@
           class="add text-danger flex-fill bg-tertiary p-2 border col-1">&#43;</button>
       </div>
       <div class="d-flex" style="box-shadow: 0px 0px 8px;">
-        <button id="AllClear" onclick="clearBox()"
-          class="flex-fill text-danger bg-tertiary border p-2 col-3 py-3">AC</button>
+        <button id="backspace"
+          onclick="backspace()" class="backspace text-light flex-fill border p-2 col-3 py-3"><i
+            class="fa-solid fa-delete-left" style="color: red;"></i></button>
+        
         <button id="0" onclick="displayNumber(0)" class="number flex-fill bg-light p-2 border   col-3">0</button>
         <button id="divison" onclick="displayNumber('/')"
           class="divide text-danger flex-fill bg-tertiary  p-2 border col-3">&#247;</button>
@@ -56,9 +58,8 @@
           style="background-color: lightgrey;">&#61;</button>
       </div>
       <div class="d-flex rounded-bottom-2" style="box-shadow: 0px 0px 8px;">
-        <button id="backspace" style="border-bottom-left-radius: 7px; background-color: lightsalmon;"
-          onclick="backspace()" class="backspace text-light flex-fill border p-2 col-3 py-3"><i
-            class="fa-solid fa-delete-left" style="color: white;"></i></button>
+        <button id="AllClear" style="border-bottom-left-radius: 7px;background-color: lightsalmon;" onclick="clearBox()"
+          class="flex-fill text-light bg-tertiary border p-2 col-3 py-3">AC</button>
         <div class="bg-light col-9" style="border-bottom-right-radius: 7px;">&nbsp;</div>
       </div>
     </div>
